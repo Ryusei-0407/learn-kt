@@ -74,4 +74,4 @@ outTmp/
 /kotlin-native/dist
 kotlin-ide/
 *.class
-META_INF
+META-INF
