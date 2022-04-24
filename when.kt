@@ -13,22 +13,22 @@ fun main() {
 }
 
 fun describe(obj: Any): String =
-when(obj) {
-    1 -> "One"
-    in 2..3 -> "Two or Three"
-    "Hello" -> "Greeting"
-    is Long -> "Long"
-    !is String -> "Not a String"
-    else -> "Unknown"
-}
+    when (obj) {
+        1 -> "One"
+        in 2..3 -> "Two or Three"
+        "Hello" -> "Greeting"
+        is Long -> "Long"
+        !is String -> "Not a String"
+        else -> "Unknown"
+    }
 
 fun type(i: Any): String =
-when(i) {
-    is String -> "String"
-    is Int -> "Int"
-    is Long -> "Long"
-    is Float -> "Float"
-    is Double -> "Double"
-    is Boolean -> "Boolean"
-    else -> "Unknown"
-}
+    when (i) {
+        is String -> "String"
+        is Int -> "Int"
+        is Long -> "Long"
+        is Float -> "Float"
+        is Double -> "Double"
+        is Boolean -> "Boolean"
+        else -> "Unknown"
+    }
